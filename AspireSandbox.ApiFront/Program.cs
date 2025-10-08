@@ -8,6 +8,7 @@ builder.AddServiceDefaults();
 
 // Add services to the container.
 builder.Services.AddProblemDetails();
+
 builder.Services.AddServiceDiscovery();
 
 // Add services to the container.
@@ -17,7 +18,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddHttpClient("weather", client =>
 {
     client.BaseAddress = new Uri("https+http://apiservice");
-}).AddServiceDiscovery();
+});
 
 var app = builder.Build();
 
