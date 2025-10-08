@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.4.2" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>7d0d2efb-35b4-4731-8189-9a145a35d75f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireSandbox.ApiService\AspireSandbox.ApiService.csproj" AspireProjectMetadataTypeName="ApiService" />
+    <ProjectReference Include="..\AspireSandbox.ApiFront\AspireSandbox.ApiFront.csproj" AspireProjectMetadataTypeName="ApiFront" />
+    <ProjectReference Include="..\AspireSandbox.Web\AspireSandbox.Web.csproj" AspireProjectMetadataTypeName="WebFront" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.4.2" />
+  </ItemGroup>
+
+</Project>

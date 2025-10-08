@@ -1,0 +1,6 @@
+@AspireSandbox.ApiFront_HostAddress = http://localhost:5141
+
+GET {{AspireSandbox.ApiFront_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
